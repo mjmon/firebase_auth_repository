@@ -27,9 +27,9 @@ extension on firebase_auth.User {
 /// {@template authenticate_repository}
 /// Repository which manages user authentication.
 /// {@endtemplate}
-class AuthenticationRepository {
+class FirebaseAuthRepository {
   /// {@macro authentication_repository}
-  AuthenticationRepository(
+  FirebaseAuthRepository(
       {firebase_auth.FirebaseAuth firebaseAuth, GoogleSignIn googleSignIn})
       : _firebaseAuth = firebaseAuth ?? firebase_auth.FirebaseAuth.instance,
         _googleSignIn = googleSignIn ?? GoogleSignIn.standard();
